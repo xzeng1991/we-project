@@ -1,0 +1,32 @@
+<!--pages/post/post-detail/post-detail.wxml-->
+<view class='container'>
+  <image class='head-image' src='{{article.img}}'></image>
+  <text class='title'>{{article.title}}</text>
+  <view class='author-date'>
+    <view class='author-box'>
+      <image class='avatar' src='{{article.avatar}}'></image>
+      <text class='author'>{{article.author}}</text>
+    </view>
+    <text class='date'>{{article.createTime}}</text>
+  </view>
+
+  <text class='detail'>{{article.content}}</text>
+
+  <!-- 互动区域 -->
+  <view class='tool'>
+    <view class='tool-item' catchtap='onUpTap' data-article-id='{{article.id}}'>
+      <image wx:if='{{article.upStatus}}' src='/images/icon/wx_app_liked.png'></image>
+      <image wx:else src='/images/icon/wx_app_like.png'></image>
+      <text>{{article.upNum}}</text>
+    </view>
+    <view class='tool-item comment' catchtap='onCommentTap' data-article-id='{{article.id}}'>
+      <image src='/images/icon/wx_app_message.png'></image>
+      <text>{{article.commentNum}}</text>
+    </view>
+    <view class='tool-item' catchtap='onCollectTap' data-article-id='{{article.id}}'>
+      <image wx:if='{{article.collectStatus}}' src='/images/icon/wx_app_collected.png'></image>
+      <image wx:else src='/images/icon/wx_app_collect.png'></image>
+      <text>{{article.collectNum}}</text>
+    </view>
+  </view>
+</view>

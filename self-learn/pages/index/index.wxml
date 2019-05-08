@@ -1,0 +1,8 @@
+<view class='container'>
+  <image src='/images/avatar/avatar-1.png' class='avatar'></image>
+  <text class='motto'>测试自考网广受自考人关注，专注学历教育干货分享，助力全国学子自考通过率提升！测试自考网实时发布自考政策；长期分享考前资料，各专业历年真题，我们联合专业助考机构为自考生提供亟需的自考辅导。</text>
+
+  <view catchtap='onTapJump' class='journey-container'>
+    <text class='journey'>进入自考网</text>
+  </view>
+</view>

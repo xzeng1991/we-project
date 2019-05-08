@@ -1,0 +1,48 @@
+<!--pages/sign/sign.wxml-->
+<view class='container'>
+  <!-- 考生信息表单 -->
+  <form bindsubmit="bindSave" report-submit="true">
+    <view class="form-box">
+      <view class="row-wrap">
+        <view class="label">姓名</view>
+        <view class="label-right">
+          <input name="name" class="input" type="text" placeholder="姓名" value="" />
+          </view>
+      </view>
+      <view class="row-wrap">
+        <view class="label">手机</view>
+        <view class="label-right">
+          <input name="mobile" class="input" maxlength="11" type="number" placeholder="11位手机号码" value="" />
+        </view>
+      </view>
+      <view class="row-wrap" >
+        <view class="label">学历</view>
+        <picker range="{{array}}" value="{{index}}" bindchange="bindPickerChange">
+          {{array[index]}}
+        </picker>
+      </view>
+      <view class="addr-details">
+        <view class="label">专业</view>
+        <view class="label-right">
+          <input name="special" class="input" type="text" placeholder="专业名称" value="" />
+        </view>
+      </view>
+    </view>
+    <!-- 报考须知 -->
+    <block class='note'>
+      <view>
+        <text>报考须知</text>
+      </view>
+      <view>
+        <text>1、自学考试属国民教育系列，采取免试入学政策，国家承认学历。</text>
+      </view>
+      <view>
+        <text>2、毕业学生颁发《中华人民共和国高等学校毕业证书》，符合条件的授予学士学位，毕业证书在学信网(www.chsi.com.cn)上查询认证，可以考研，出国留学 、评职称等，享受普通高等学校毕业生同等学历待遇。</text>
+      </view>
+      <view>
+        <text>3、提示“报名信息提交成功”后，学业顾问将在24小时内对您的信息进行审核， 并解答您的相关问题，请保持联系方式畅通。</text>
+      </view>
+    </block>
+    <button type="warn" class="save-btn" formType="submit">保存</button>
+  </form>
+</view>

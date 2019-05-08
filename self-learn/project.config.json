@@ -1,0 +1,68 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.6",
+	"appid": "wx7d61049ebdd13898",
+	"projectname": "self-learn",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "文章详情",
+					"pathName": "pages/post/post-detail/post-detail",
+					"query": "id=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评论",
+					"pathName": "pages/post/post-comment/post-comment",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "报名",
+					"pathName": "pages/sign/sign",
+					"scene": null
+				}
+			]
+		}
+	}
+}
